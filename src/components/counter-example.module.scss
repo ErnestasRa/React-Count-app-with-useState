@@ -1,0 +1,16 @@
+@use "_variables";
+
+.counterContainer {
+    font-size: 50;
+    text-align: center;
+    margin-top: 2rem;
+    input {
+        width: 20rem;
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 3rem;
+        color: firebrick
+        
+    }
+}

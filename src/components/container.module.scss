@@ -1,0 +1,8 @@
+@use "_variables";
+
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  background: variables.$color-background;
+}

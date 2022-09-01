@@ -1,0 +1,15 @@
+@use "_variables";
+
+.buttonPrimary {
+    width: 5rem;
+    height: 4rem;
+    background: variables.$color-primary;
+    border-radius: 10px;
+} 
+
+.buttonSecondary {
+    width: 5rem;
+    height: 4rem;
+    background: variables.$color-secondary;
+    border-radius: 10px;
+}
