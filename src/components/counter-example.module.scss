@@ -14,3 +14,14 @@
         
     }
 }
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20;
+    margin-top: 1rem;
+
+    button {
+        margin: 1rem;
+    }
+}

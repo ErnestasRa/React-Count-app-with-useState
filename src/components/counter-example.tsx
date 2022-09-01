@@ -24,10 +24,7 @@ const CounterExample = () => {
         className={counterClasses.counterContainer}
       />
 
-      <div style={{
-        display: 'flex', justifyContent: 'center', gap: 20, marginTop: '1rem',
-      }}
-      >
+      <div className={counterClasses.buttonContainer}>
         <Button className={classes.buttonSecondary} onClick={() => setCount(count - step)}>
           Mazinti
         </Button>
