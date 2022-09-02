@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './button-element';
 import InputElement from './input-element';
-import classes from './button.module.scss';
 import counterClasses from './counter-example.module.scss';
 
 const CounterExample = () => {
@@ -25,13 +24,13 @@ const CounterExample = () => {
       />
 
       <div className={counterClasses.buttonContainer}>
-        <Button type="button" className={classes.buttonSecondary} onClick={() => setCount(count - step)}>
+        <Button type="button" onClick={() => setCount(count - step)}>
           Mazinti -
           {' '}
           {step}
         </Button>
 
-        <Button type="button" className={classes.buttonPrimary} onClick={() => setCount(count + step)}>
+        <Button type="button" onClick={() => setCount(count + step)}>
           Didinti +
           {' '}
           {step}
