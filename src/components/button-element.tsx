@@ -1,21 +1,10 @@
 import React from 'react';
 
-type ButtonProps = {
-  onClick(): void;
-  children: React.ReactNode;
-  className: string;
-  type: React.ButtonHTMLAttributes<HTMLButtonElement>['type']
-}
+type ButtonProps = JSX.IntrinsicElements['button']
 ;
 
-const Button: React.FC<ButtonProps> = ({
-  onClick, children, className, type,
-}: ButtonProps) => (
-  <button
-    type={type}
-    onClick={onClick}
-    className={className}
-  >
+const Button: React.FC<ButtonProps> = ({ children, ...props }) => (
+  <button {...props}>
     {children}
   </button>
 );
