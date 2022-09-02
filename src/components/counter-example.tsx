@@ -19,18 +19,22 @@ const CounterExample = () => {
       <h2>{`Count: ${count}`}</h2>
 
       <InputElement
-        step={step}
+        type="number"
+        value={step}
         onChange={(e) => setStep(e.target.valueAsNumber)}
-        className={counterClasses.counterContainer}
       />
 
       <div className={counterClasses.buttonContainer}>
         <Button type="button" className={classes.buttonSecondary} onClick={() => setCount(count - step)}>
-          Mazinti
+          Mazinti -
+          {' '}
+          {step}
         </Button>
 
         <Button type="button" className={classes.buttonPrimary} onClick={() => setCount(count + step)}>
-          Didinti
+          Didinti +
+          {' '}
+          {step}
         </Button>
       </div>
     </div>

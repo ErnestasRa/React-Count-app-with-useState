@@ -1,17 +1,12 @@
 import React from 'react';
+import classes from './input-element.module.scss';
 
-type InputElementProps = {
-  onChange: (e:React.ChangeEvent<HTMLInputElement>) => void
-  step: number,
-  className: string,
-};
+type InputElementProps = JSX.IntrinsicElements['input'];
 
-const InputElement: React.FC<InputElementProps> = ({ step, onChange, className }) => (
+const InputElement: React.FC<InputElementProps> = ({ className, ...props }) => (
   <input
-    type="number"
-    value={step}
-    onChange={onChange}
-    className={className}
+    {...props}
+    className={classes.input + (className ? ` ${className}` : '')}
   />
 );
 

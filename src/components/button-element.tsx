@@ -4,7 +4,9 @@ type ButtonProps = JSX.IntrinsicElements['button']
 ;
 
 const Button: React.FC<ButtonProps> = ({ children, ...props }) => (
-  <button {...props}>
+  <button
+    {...props}
+  >
     {children}
   </button>
 );
