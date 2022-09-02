@@ -12,6 +12,7 @@ module.exports = {
         project: './tsconfig.json'
     },
     rules: {
+        'react/button-has-type': [0],
         'react/function-component-definition': [2, {
             namedComponents: 'arrow-function',
             unnamedComponents: 'arrow-function',

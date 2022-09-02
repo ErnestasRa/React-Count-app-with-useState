@@ -25,11 +25,11 @@ const CounterExample = () => {
       />
 
       <div className={counterClasses.buttonContainer}>
-        <Button className={classes.buttonSecondary} onClick={() => setCount(count - step)}>
+        <Button type="button" className={classes.buttonSecondary} onClick={() => setCount(count - step)}>
           Mazinti
         </Button>
 
-        <Button className={classes.buttonPrimary} onClick={() => setCount(count + step)}>
+        <Button type="button" className={classes.buttonPrimary} onClick={() => setCount(count + step)}>
           Didinti
         </Button>
       </div>

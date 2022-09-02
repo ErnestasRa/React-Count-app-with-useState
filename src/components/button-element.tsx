@@ -4,12 +4,15 @@ type ButtonProps = {
   onClick(): void;
   children: React.ReactNode;
   className: string;
+  type: React.ButtonHTMLAttributes<HTMLButtonElement>['type']
 }
 ;
 
-const Button: React.FC<ButtonProps> = ({ onClick, children, className }: ButtonProps) => (
+const Button: React.FC<ButtonProps> = ({
+  onClick, children, className, type,
+}: ButtonProps) => (
   <button
-    type="button"
+    type={type}
     onClick={onClick}
     className={className}
   >
